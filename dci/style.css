@@ -1,0 +1,30 @@
+body {
+    background-image: url(https://cdn5.f-cdn.com/contestentries/1370548/29833877/5b4f15b1ea4aa_thumb900.jpg);
+    background-size: cover;
+}
+div {
+    padding: 10% 0 10% 0;
+}
+
+h1 {
+    color: rgb(255, 196, 0);
+    font-family: 'Dancing Script','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+    text-align: center;
+
+}
+
+a {
+    background-color: chartreuse;
+    float: center;
+    display: table-cell;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+    color: red;/*يغير لون a لما يقف المؤشر فوقه */
+  }
