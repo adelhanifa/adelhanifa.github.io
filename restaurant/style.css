@@ -1,0 +1,86 @@
+body {
+    background-color: #3d2c32;
+}
+
+div {
+    padding: 5% 0 5% 0;
+}
+
+h1 {
+    color: #f9ad5a;
+    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    text-align: center;
+}
+
+a {
+    font-size: 150%;
+    background-color: #f9ad5a;
+    border: 1px solid #f9ad5a;
+    float: center;
+    display: table-cell;
+    color: #3d2c32;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #3d2c32;
+    color: #f9ad5a;
+    border: 1px solid #f9ad5a;
+    /*يغير لون a لما يقف المؤشر فوقه */
+}
+
+header, footer {
+    background-color: #f9ad5a;
+    color: 3d2c32;
+    padding: 0.1em;
+}
+
+img {
+    width: 50%;
+    border: 3px solid #f9ad5a; 
+    border-radius: 50px;
+}
+
+.img{
+    border: 3px solid #3d2c32; 
+}
+
+table {
+    border: 0.5px solid #f9ad5a;
+    text-align: center; 
+}
+td{
+    padding: 3px 0 3px 0;
+    border-color: #f9ad5a;
+}
+
+.tr1 {
+    background-color: #f9ad5a;
+}
+
+h2 {
+    color: #f9ad5a;
+    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+.h2 {
+    color: #3d2c32;
+}
+
+h3 {
+    color: white;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: initial;
+}
+.h3{
+    color: black;
+}
+.h3align{
+    text-align: center;
+    font-size: x-large;
+}
+
