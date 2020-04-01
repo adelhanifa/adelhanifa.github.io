@@ -2,24 +2,33 @@
 
 <head>
   <title>BURGER</title>
-  <link href="./style.css" type="text/css" rel="stylesheet">
+  <link href="style/style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <center>
     <header>
-      <div class="div"><a href="index.html" type="back" class="logo"></a></div>
-      <a href="snacks.html" type="back">SNACKS</a>
-      <a href="sweets.html" type="back">SWEETS</a>
-      <a href="getraenke.html" type="back">GETRÄNKE</a>
+      <div class="div"><a href="index.html"  class="logo"></a></div>
+            <a href="photogallery.html">Photo gallery</a>
+            <a href="aboutus.html">About us</a>
+            <a href="kontakt.html">Kontakt</a>
     </header>
 
-    <div>
-      <table style="width:80%">
+
+    <div class="main">
+
+      <div class="left">
+        <a href="burger.html" class="aktiv">BURGER</a>
+        <a href="snacks.html" >SNACKS</a>
+        <a href="sweets.html" >SWEETS</a>
+        <a href="getraenke.html" >Drinks</a>
+      </div>
+
+      <table>
         
         <tr>
-          <td><img src="burger1.png"></td>
+          <td><img src="photos/burger1.png"></td>
           <td>
             <h2>Cheese Lover CHICKEN</h2>
             <h3>Deine Extra-Portion Käse: der Cheese Lover CHICKEN mit knusprig paniertem Hähnchen, würzigem Bacon,
@@ -29,7 +38,7 @@
         </tr>
 
         <tr class="tr1">
-          <td><img class="img" src="burger2.png"></td>
+          <td><img class="img" src="photos/burger2.png"></td>
           <td>
             <h2 class="h2">Rebel Whopper</h2>
             <h3 class="h3">Der neue Rebel WHOPPER ganz ohne Beef – dafür mit rein pflanzlichem Patty, knackigem Salat
@@ -38,7 +47,7 @@
         </tr>
         
         <tr>
-          <td><img src="burger3.png"></td>
+          <td><img src="photos/burger3.png"></td>
           <td>
             <h2>Double Whopper</h2>
             <h3>Viele Leute denken, der WHOPPER ist das Maß der Dinge – und sie haben Recht! So gesehen ist der Double
@@ -49,9 +58,10 @@
 
       </table>
     </div>
+
+
     <footer>
-      <a>&copy;2020 Hanifa Restaurant</a>
-      <a href="kontakt.html" type="back">Kontakt</a>
+      <a class="copy">&copy;2020 Hanifa Restaurant</a>
     </footer>
   </center>
 </body>
