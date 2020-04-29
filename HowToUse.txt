@@ -1,0 +1,24 @@
+add files to github 1st time:
+====================
+git status
+git init
+git status
+git add index.html
+git status
+git commit -m "test...."
+get remote add origin link
+git push -u  origin master
+
+
+add files to github next times:
+====================
+git statusgit 
+add index.html
+git status
+git commit -m "test2...."
+git push -u  origin master
+
+
+pull files from github next times:
+====================
+git pull  origin master
