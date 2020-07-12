@@ -4,14 +4,14 @@ showWeather('mönchengladbach');
 
 function showWeather(x) {
     console.log(x)
-    var link = `http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=${apiKey}`;
+    var link = `https://api.openweathermap.org/data/2.5/weather?q=${x}&appid=${apiKey}`;
     console.log(link)
     fetch(link)
         .then(response => response.json())
         .then(data => {
             console.log(data)
 
-            var countryImgSrc = 'http://openweathermap.org/images/flags/' + data.sys.country.toLowerCase() + '.png';
+            var countryImgSrc = 'https://openweathermap.org/images/flags/' + data.sys.country.toLowerCase() + '.png';
             //console.log(countryImgSrc)
             var weatherImgSrc = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png'
 
@@ -87,15 +87,3 @@ function toCelsius(x) {
 function toTime(x) {
     return new Date(x * 1000);
 }
-
-
-
-
-
-
-
-
-
-// var today = new Date();  \xB0C
-// var str = today.toGMTString();  
-// console.log(str);   

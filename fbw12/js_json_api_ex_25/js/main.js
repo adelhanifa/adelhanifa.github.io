@@ -3,9 +3,9 @@ let apiKey = '5a245477';
 function showMovis(x, y) {
     console.log(x, y)
     if (y == 'all')
-        var link = `http://www.omdbapi.com/?apikey=${apiKey}&s=${x}`;
+        var link = `https://www.omdbapi.com/?apikey=${apiKey}&s=${x}`;
     else
-        var link = `http://www.omdbapi.com/?apikey=${apiKey}&s=${x}&type=${y}`;
+        var link = `https://www.omdbapi.com/?apikey=${apiKey}&s=${x}&type=${y}`;
 
     console.log(link)
     fetch(link)
@@ -36,7 +36,7 @@ function showMovis(x, y) {
 
 function showMovieDetails(x) {
     console.log(x)
-    var link = `http://www.omdbapi.com/?apikey=${apiKey}&i=${x}`;
+    var link = `https://www.omdbapi.com/?apikey=${apiKey}&i=${x}`;
     console.log(link)
     fetch(link)
         .then(response => response.json())

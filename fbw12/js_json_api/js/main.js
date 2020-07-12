@@ -114,7 +114,7 @@ fetch(url1)
       //console.log(item);
       userTableID.innerHTML += `
     <tr>
-        <th><a type="button" href="/profile.html" style="color: black;" onclick="goToProfile(${item.id})">${item.id}</a></th>
+        <th><a type="button" href="profile.html" style="color: black;" onclick="goToProfile(${item.id})">${item.id}</a></th>
         <td>${item.name}</td>
         <td>${item.username}</td>
         <td>${item.email}</td>
