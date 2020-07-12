@@ -44,7 +44,7 @@ fetch(url2)
         data.map(function (item) {
             userpostId.innerHTML += `
         <div class="col-sm-12">
-            <div class="well" id="thisPostID${item.id}">
+            <div class="well">
                 <p><b>${item.title},</b> ${item.body}</p>
                 <div class="nav nav-tabs nav-justified" role="group">
                     <button type="button" class="btn btn-default btn-sm">
@@ -66,14 +66,22 @@ fetch(url2)
 
 
 //////coments
-
+let commentsIdValue = 0;
 function showCommentsList(x) {
-    
+    if (commentsIdValue == 0){
+
+    }
+    else {
+        document.getElementById(commentsIdValue).innerHTML = '';
+    }
+
     var url = 'https://jsonplaceholder.typicode.com/posts/' + x + '/comments'
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
+            commentsIdValue = 'thisPostID'+x;
+            console.log(commentsIdValue);
             document.getElementById('thisPostID'+x).innerHTML += `
             <br><p class="well text-left">
                ${data.map(function (item, index) {

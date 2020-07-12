@@ -238,5 +238,5 @@ function goToProfile(x) {
   localStorage.setItem('userIdLocal', x);
   console.log(x);
  
-  window.location.href = '/profile.html';
+  window.location.replace('/profile.html');
 } 
