@@ -15,9 +15,7 @@ const userSchema = new Schema({
     phoneNumber: String,
     userGroup: String,
     email: String,
-    password: String,
-    photo: String,
-    activ: Boolean
+    password: String
 });
 
 const User = mongoose.model('User', userSchema)

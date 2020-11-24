@@ -9,17 +9,10 @@
   "author": "adel_khaled",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "*",
-    "alert": "*",
+    "alert": "^5.0.5",
     "body-parser": "*",
-    "connect-flash": "*",
-    "cookie-parser": "*",
-    "dotenv": "*",
     "express": "*",
-    "express-session": "*",
     "hbs": "*",
-    "mongoose": "*",
-    "multer": "*",
-    "mustache": "*"
+    "mongoose": "*"
   }
 }

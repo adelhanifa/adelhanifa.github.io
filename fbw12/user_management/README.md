@@ -1,6 +1,7 @@
 Projet name:    School Managment System
 
-Author :        1- Adel Hanifa
+Author :        1- Khaled Khatib
+                2- Adel Hanifa
 
 Starting time:  08/09/2020
 

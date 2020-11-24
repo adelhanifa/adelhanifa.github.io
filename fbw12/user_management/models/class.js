@@ -6,7 +6,7 @@ const classSchema = new Schema({
     title: String,
     start: String,
     end: String,
-    teacher: Object,
+    teacher: String,
     students: Array
 });
 
