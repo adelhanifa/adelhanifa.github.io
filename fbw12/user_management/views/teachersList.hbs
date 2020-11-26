@@ -7,7 +7,7 @@
             <p>Add or edit a Teacher info</p>
         </div>
         <div class="btn-group mt-2">
-            <form class="col-auto" action="/teacher-list-find" method="POST">
+            <form class="col-auto" action="/user/teacher-list-find" method="POST">
                 <div class="input-group">
                     <input type="text" class="form-control" name="firstName" placeholder="Enter teacher's name.....">
                     <div class="input-group-prepend">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </form>
-            <a href="/user-page" class="btn btn-outline-primary mx-1" type="button">Go back</a>
+            <a href="/user/profile" class="btn btn-outline-primary mx-1" type="button">Go back</a>
             <a href="/log-out" class="btn btn-outline-danger mx-1" type="button">Log out</a>
         </div>
     </div><!-- End Breadcrumbs -->
@@ -48,7 +48,7 @@
                 </button>
             </div>
 
-            <form action="/edit-user-by-admin" method="POST" id="dispayUserInfo">
+            <form action="/user/edit-user-by-admin" method="POST" id="dispayUserInfo">
 
 
 

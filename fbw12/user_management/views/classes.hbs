@@ -9,7 +9,7 @@
     <div class="btn-group mt-2">
       <button class="btn btn-outline-light mx-1" type="button" data-toggle="modal" data-target="#staticBackdrop"
         onclick="addClassFun()"> + Add Class</button>
-      <a href="/user-page" class="btn btn-outline-primary mx-1" type="button">Go back</a>
+      <a href="/user/profile" class="btn btn-outline-primary mx-1" type="button">Go back</a>
       <a href="/log-out" class="btn btn-outline-danger mx-1" type="button">Log out</a>
     </div>
   </div><!-- End Breadcrumbs -->
@@ -39,10 +39,7 @@
           <td>{{start}}</td>
           <td>{{end}}</td>
           <td>
-            <input value="{{_id}}" name="_id" class="d-none">
-            <button type="submit" class="btn btn-warning">
-              <a href="/class-page/{{_id}}" style="color: white;">Show</a>
-            </button>
+            <a type="button" class="btn btn-warning" href="/user/class-page/{{_id}}" style="color: white;">Show</a>
           </td>
           {{/with}}
         </tr>
@@ -69,7 +66,7 @@
         </button>
       </div>
 
-      <form action="/add-class" method="POST">
+      <form action="/user/add-class" method="POST">
         <div class="modal-body">
           <div class="form-group">
             <label>Class Title:</label>

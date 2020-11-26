@@ -4,13 +4,13 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
+!(function ($) {
   "use strict";
 
   // Preloader
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
       });
     }
@@ -18,7 +18,7 @@
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -50,7 +50,7 @@
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
@@ -71,19 +71,19 @@
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $(document).on('click', '.mobile-nav-toggle', function (e) {
       $('body').toggleClass('mobile-nav-active');
       $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
       $('.mobile-nav-overly').toggle();
     });
 
-    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+    $(document).on('click', '.mobile-nav .drop-down > a', function (e) {
       e.preventDefault();
       $(this).next().slideToggle(300);
       $(this).parent().toggleClass('active');
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
       var container = $(".mobile-nav, .mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
@@ -98,7 +98,7 @@
   }
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
@@ -106,7 +106,7 @@
     }
   });
 
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -138,7 +138,7 @@
   });
 
   // Init AOS
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     AOS.init({
       duration: 1000,
       once: true
@@ -156,26 +156,26 @@ function addClassFun() {
   studentsSelect.innerHTML = `<option value="" disabled>Please select the students</option>`
   //alert(id)
   $.ajax({
-    url: '/selectOptions-teacher',
+    url: '/ajax/selectOptions-teacher',
     type: 'GET',
     success: function (result) {
-        console.log(result)
-        result.map((item) => {
-          teacherSelect.innerHTML += `<option value="${item._id}">${item.firstName} ${item.lastName}</option>`
-        })
+      console.log(result)
+      result.map((item) => {
+        teacherSelect.innerHTML += `<option value="${item._id}">${item.firstName} ${item.lastName}</option>`
+      })
     },
     error: function (error) {
       console.log(error)
     }
   });
   $.ajax({
-    url: '/selectOptions-students',
+    url: '/ajax/selectOptions-students',
     type: 'GET',
     success: function (result) {
-        console.log(result)
-        result.map((item) => {
-          studentsSelect.innerHTML += `<option value="${item._id}">${item.firstName} ${item.lastName}</option>`
-        })
+      console.log(result)
+      result.map((item) => {
+        studentsSelect.innerHTML += `<option value="${item._id}">${item.firstName} ${item.lastName}</option>`
+      })
     },
     error: function (error) {
       console.log(error)
@@ -186,14 +186,14 @@ function addClassFun() {
 function findUserToEdit(id) {
   //alert(id);
   $.ajax({
-    url: '/select-user-id',
+    url: '/ajax/select-user-id',
     type: 'GET',
     data: {
       id: id
     },
     success: function (result) {
-        console.log(result)
-        dispayUserInfo.innerHTML = `
+      console.log(result)
+      dispayUserInfo.innerHTML = `
         <div class="modal-body row mx-3">
           <input value="${result._id}" name="_id" class="d-none">
 
@@ -226,13 +226,11 @@ function findUserToEdit(id) {
           <h6 class="col-sm-3 px-0 font-weight-bold">Email:</h6>
           <input class="form-control col-sm-9" value="${result.email}" name="email">
 
-          <h6 class="col-sm-3 px-0 font-weight-bold">Password:</h6>
-          <input class="form-control col-sm-9" value="${result.password}" name="password">
       </div>
 
       <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-          <a type="button" class="btn btn-warning" href="delete-user-by-admin/${result._id}">Delete</a>
+          <a type="button" class="btn btn-warning" href="/user/delete-user-by-admin/${result._id}">Delete</a>
           <button type="submit" class="btn btn-primary">Save</button>
       </div>
         `

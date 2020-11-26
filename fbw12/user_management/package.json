@@ -20,6 +20,8 @@
     "hbs": "*",
     "mongoose": "*",
     "multer": "*",
-    "mustache": "*"
+    "mustache": "*",
+    "bcrypt": "*",
+    "jsonwebtoken": "*"
   }
 }

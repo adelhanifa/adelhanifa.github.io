@@ -9,7 +9,7 @@
     <div class="btn-group mt-2">
       <button class="btn btn-outline-light mx-1" type="button" data-toggle="modal" data-target="#staticBackdrop">Edit
         Class</button>
-      <a href="/user-page" class="btn btn-outline-primary mx-1" type="button">Go back</a>
+      <a href="/user/profile" class="btn btn-outline-primary mx-1" type="button">Go back</a>
       <a href="/log-out" class="btn btn-outline-danger mx-1" type="button">Log out</a>
     </div>
   </div><!-- End Breadcrumbs -->
@@ -17,33 +17,35 @@
   <!-- ======= Contact Section ======= -->
   <section class="container w-50 my-4">
     <div class="container mb-4">
+      {{#with class}}
       <table class="table">
         <tr>
           <th scope="row" colspan="4">
-            <h3 class="text-center">{{loud class.title}}</h3>
+            <h3 class="text-center">{{loud title}}</h3>
           </th>
         </tr>
         <tr>
           <th scope="row" class="w-25">Teacher:</th>
-          <td colspan="3">{{teacher}}</td>
+          <td colspan="3">{{teacher.firstName}} {{teacher.lastName}}</td>
         </tr>
         <tr>
           <th scope="row" class="w-25">Start Date:</th>
-          <td>{{class.start}}</td>
+          <td>{{start}}</td>
           <th scope="row" class="w-25">End Date:</th>
-          <td>{{class.end}}</td>
+          <td>{{end}}</td>
         </tr>
         <tr>
           <th scope="row" class="w-25">Students:</th>
           <td colspan="3">
             <div class="row">
               {{#each students}}
-              <div class="col-sm-6"><b>{{addOne @key}}-</b> {{this}}</div>
+              <div class="col-sm-6"><b>{{addOne @key}}-</b> {{this.firstName}} {{this.lastName}}</div>
               {{/each}}
             </div>
           </td>
         </tr>
       </table>
+      {{/with}}
     </div>
 
   </section><!-- End Contact Section -->

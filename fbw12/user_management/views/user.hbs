@@ -8,9 +8,9 @@
         </div>
         <div class="btn-group mt-2">
             {{#if adminsButton}}
-                <a href="/classes-page" class="btn btn-outline-light mx-1" type="button">Classes</a>
-                <a href="/teachers-list" class="btn btn-outline-light mx-1" type="button">Teachers</a>
-                <a href="/students-list" class="btn btn-outline-light m mx-1" type="button">Students</a>
+                <a href="/user/classes-page" class="btn btn-outline-light mx-1" type="button">Classes</a>
+                <a href="/user/teachers-list" class="btn btn-outline-light mx-1" type="button">Teachers</a>
+                <a href="/user/students-list" class="btn btn-outline-light m mx-1" type="button">Students</a>
             {{/if}}
                 <button class="btn btn-outline-primary mx-1" type="button" data-toggle="modal" data-target="#staticBackdrop">Edit</button>
                 <a href="/log-out" class="btn btn-outline-danger mx-1"  type="button">Log out</a>
@@ -28,7 +28,7 @@
                     <td>{{loud firstName}} {{loud lastName}}</td>
                     <td rowspan="3" style="width:200px;">
                         <div>
-                            <img src={{photo}} class="img-thumbnail rounded" alt="">
+                            <img src="/{{photo}}" class="img-thumbnail rounded" alt="">
                         </div>
                     </td>
                 </tr>
@@ -78,7 +78,7 @@
             </div>
 
             {{#with myUser}}
-            <form action="/save-changes" method="POST">
+            <form action="/user/save-changes" method="POST">
 
                 <div class="modal-body row mx-3">
                     <input value="{{_id}}" name="_id" class="d-none">
@@ -112,8 +112,6 @@
                     <h6 class="col-sm-3 px-0 font-weight-bold">Email:</h6>
                     <input class="form-control col-sm-9" value="{{email}}" name="email">
 
-                    <h6 class="col-sm-3 px-0 font-weight-bold">Password:</h6>
-                    <input class="form-control col-sm-9" value="{{password}}" name="password">
                 </div>
 
                 <div class="modal-footer">
