@@ -11,9 +11,9 @@ Advanced bonus task:
 ********************************************************************************************************************
 
  about my code: 
- - to run the code just follow: 
-         * Download the code 
-         * open the folder in Visual Studio 
+ - to run the code just follow:
+         * Download the code
+         * open the folder in Visual Studio
          * write in the Terminal "npm init" & "npm i" to install all node_modules and package-lock
          * chande the value of the variables "dataBaseLink,port" in server.js
          * write in the Terminal "npm start" to run the server
