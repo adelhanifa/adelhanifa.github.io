@@ -1,0 +1,120 @@
+<div class="container">
+  
+  {{!-- for flash message --}}
+  {{#if msg}}
+  <div class="row text-center fixed-top">
+    <div class="alert alert-warning alert-dismissible fade show col-sm-8 mx-auto" role="alert">
+      {{msg}}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+  {{/if}}
+
+  {{!-- card display --}}
+  <div class="row d-flex align-items-center vh-100">
+    <div class="card border-success my-bg col-sm-8 mx-auto h-75">
+      
+      {{!-- card title  --}}
+      <div class="card-header bg-transparent border-success text-center"><i class="fas fa-tasks"></i><b> My Shopping List</b></div>
+
+      {{!-- add item form--}}
+      <div class="card-header bg-transparent border-success text-center">
+        <form class="input-group" action="/item/add" method="POST">
+          <input type="text" name="name" class="form-control" placeholder="Please Enter Item Name.... " minlength="3"
+            required>
+          <div class="input-group-append">
+            <button class="btn btn-transition btn-outline-info" type="submit"><i class="fas fa-plus"></i></button>
+          </div>
+        </form>
+      </div>
+
+      {{!-- display all items --}}
+      <div class="card-body">
+        <ul class="list-group">
+          
+          {{!-- if no Items --}}
+          {{#unless item}}
+            <b class="text-center"> 
+             You don't have any items in the list <br> Please enter a new item using the form above
+            </b>
+          {{/unless}}
+          
+          {{!-- to show Important to do Items at first  --}}
+          {{#each item}}
+          {{#unless done}}
+          {{#if priority}}
+          <li class="list-group-item d-flex justify-content-between align-items-center bg-to-buy " id="editID{{@key}}">
+            <div> 
+              <span >{{name}} <span class="badge badge-warning ml-2">Important</span> </span>
+            </div>
+            <div class="my-buttons">
+              <a type="button" title="Not Important" href="/item/imp/{{_id}}/false" class="border-0 btn-transition btn btn-outline-dark">
+                <i class="fas fa-thumbtack"></i>
+              </a>
+              <a type="button" title="Edit" class="border-0 btn-transition btn btn-outline-primary" onclick="editItem('{{_id}}','editID{{@key}}')">
+                <i class="fas fa-pencil-alt"></i>
+              </a><br>
+              <a type="button" href="/item/done/{{_id}}" title="Done" class="border-0 btn-transition btn btn-outline-success">
+                <i class="fa fa-check"></i>
+              </a>
+              <a type="button" href="/item/del/{{_id}}" title="Delete" class="border-0 btn-transition btn btn-outline-danger">
+                <i class="fa fa-trash"></i>
+              </a>
+            </div>
+          </li>
+          {{/if}}
+          {{/unless}}
+          {{/each}}
+
+          {{!-- to show not Important to do Items in te middle --}}
+          {{#each item}}
+          {{#unless done}}
+          {{#unless priority}}
+          <li class="list-group-item d-flex justify-content-between align-items-center bg-to-buy" id="editID{{@key}}">
+            <div> 
+              <span>{{name}}</span>
+              </div>
+            <div class="my-buttons">
+              <a type="button" title="Important" href="/item/imp/{{_id}}/true" class="border-0 btn-transition btn btn-outline-dark">
+                <i class="fas fa-thumbtack"></i>
+              </a>
+              <a type="button" title="Edit" class="border-0 btn-transition btn btn-outline-primary" onclick="editItem('{{_id}}','editID{{@key}}')">
+                <i class="fas fa-pencil-alt"></i>
+              </a><br>
+              <a type="button" href="/item/done/{{_id}}" title="Done" class="border-0 btn-transition btn btn-outline-success">
+                <i class="fa fa-check"></i>
+              </a>
+              <a type="button" href="/item/del/{{_id}}" title="Delete" class="border-0 btn-transition btn btn-outline-danger">
+                <i class="fa fa-trash"></i>
+              </a>
+            </div>
+          </li>
+          {{/unless}}
+          {{/unless}}
+          {{/each}}
+
+          {{!-- to show done Items in the end --}}
+          {{#each item}}
+          {{#if done}}
+          <li class="list-group-item d-flex justify-content-between align-items-center bg-done disabeld">
+            <del> 
+              <span>{{name}}</span>
+              </del>
+            <div class="my-buttons">
+              <a type="button" href="/item/del/{{_id}}" title="Delete" class="border-0 btn-transition btn btn-outline-danger">
+                <i class="fa fa-trash"></i>
+              </a>
+            </div>
+          </li>
+          {{/if}}
+          {{/each}}
+
+        </ul>
+      </div>
+      {{!-- number of Item need to buy --}}
+      <div class="card-footer bg-transparent border-success text-secondary"><b>{{check item}}</b> items left</div>
+    </div>
+  </div>
+</div>
