@@ -12,7 +12,6 @@ Advanced bonus task:
 
  about my code: 
  - to run the code just follow:
- 
  1- Download the code
  2- open the folder in Visual Studio
  3- write in the Terminal "npm init" & "npm i" to install all node_modules and package-lock
