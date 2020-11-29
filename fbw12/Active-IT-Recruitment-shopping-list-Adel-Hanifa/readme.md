@@ -12,11 +12,11 @@ Advanced bonus task:
 
  about my code: 
  - to run the code just follow:
-         1- Download the code
-         2- open the folder in Visual Studio
-         3- write in the Terminal "npm init" & "npm i" to install all node_modules and package-lock
-         4- chande the value of the variables "dataBaseLink,port" in server.js
-         5- write in the Terminal "npm start" to run the server
+ 1- Download the code
+ 2- open the folder in Visual Studio
+ 3- write in the Terminal "npm init" & "npm i" to install all node_modules and package-lock
+ 4- chande the value of the variables "dataBaseLink,port" in server.js
+ 5- write in the Terminal "npm start" to run the server
 
  - in test screenshot I added 3 pictures :
          * Database
