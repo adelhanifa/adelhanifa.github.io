@@ -11,6 +11,7 @@ Advanced bonus task:
 ********************************************************************************************************************
 
  about my code: 
+ 
 1- to run the code just follow:
  - Download the code
  - open the folder in Visual Studio
@@ -19,23 +20,29 @@ Advanced bonus task:
  - write in the Terminal "npm start" to run the server
 
 2- in test screenshot I added 3 pictures :
-         * Database
-         * Browser in Desktop
-         * Browser in Mobile phone
+ - Database
+ - Browser in Desktop
+ - Browser in Mobile phone
 
 3- I used one collection in the DataBase for the Items.
+
 4- Because I don't have a lot of routs I puted all the routs in the server.js without using (router or controler).
+
 5- when the page run for the first time and the DataBase is empty this message will see: 
-      "You don't have any items in the list  Please enter a new item using the form above". 
+ - "You don't have any items in the list  Please enter a new item using the form above". 
       
 6- Using the form on the top of the card enter item name and click enter than item will added to DataBase.
+
 7- each item has 4 options (Important, Done, Edit, Delete) the options will apear when hover the item.
-         * Imporent: to make the Item important and display it on the top of the list.
-         * Done: to make the Item as done (bought) and display it on the bottom of the list.
-         * Edit: to call the Item and edit it using Ajax.
-         * Delete: To delete the Item from the DataBase.
+ - Imporent: to make the Item important and display it on the top of the list.
+ - Done: to make the Item as done (bought) and display it on the bottom of the list.
+ - Edit: to call the Item and edit it using Ajax.
+ - Delete: To delete the Item from the DataBase.
 
 8- in the card footer we see how many items left (need to buy) using "registerHelper".
+
 9- I tried to but comment for all parts of the code.
+
 10- I hope i did all the parts you needed.
+
 11- I hope you like it. 
