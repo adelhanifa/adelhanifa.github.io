@@ -1,0 +1,21 @@
+{
+  "name": "cognigy_challenge_server",
+  "version": "1.0.0",
+  "description": "Secure passwords API generator",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon server.js"
+  },
+  "author": "Adel Hanifa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "*",
+    "express": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "chai-http": "*",
+    "mocha": "*"
+  }
+}
