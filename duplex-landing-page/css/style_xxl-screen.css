@@ -1,8 +1,0 @@
-/*===== this style for screen up 1400px =====*/
-/*===========================================*/
-
-@media only screen and (min-width: 1400px) {
-  .section1 {
-    height:calc(100vw * 9 / 16)
-  }
-}
