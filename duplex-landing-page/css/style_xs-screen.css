@@ -1,0 +1,89 @@
+/*===== this style for screen until 575px =====*/
+/*=============================================*/
+
+@media only screen and (max-width:575px) {
+  .section1 {
+    /* iphone X size  */
+    height:calc(100vw * 2.16) 
+  }
+  .section1 .logo {
+    width: 35%;
+  }
+  .sub-heading {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Bellefair';
+  }
+  .section1 .title1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .section1 .title2 {
+    width: 25%;
+    margin-top: -21px;
+  }
+  .section2 .heading {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .section2 .left-part {
+    width: 100%;
+  }
+  .section2 .left-part .left-part-text {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .section2 .right-part {
+    margin-top: 36px;
+    width: 100%;
+  }
+  .section4 {
+    padding: 0 12px;
+  }
+  .section4 .left-part {
+    width: 100%;
+  }
+  .section4 .right-part {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .section4 .part1 .right-part .paragraph-text{
+    margin-left: 0!important;
+  }
+  .section4 .part2 .left-part .left-part-text {
+    width: 100%;
+  }
+  .section4 .part2 .right-part .right-part-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .section4 .part3 .right-part .right-part-text{
+    margin-left: 0!important;
+  }
+  .section5 .title1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .section5 .title2 {
+    width: 25%;
+  }
+  .section6 {
+    height: 250px;
+    padding: 0 12px;
+  }
+  .section6 .vertical {
+    height: 35px;
+  }
+  .section6 .tel-container {
+    font-size: 24px;
+    padding: 12px 12px;
+  }
+  .section6 .tel-container svg{
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,31 @@
+/*===== this style for screen up 992px until 1199px =====*/
+/*=======================================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sub-heading {
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family: 'Bellefair';
+  }
+  .section1 .title1 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .section1 .title2 {
+    width: 20%;
+    margin-top: -32px;
+  }
+  .section2 .heading {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 15px;
+    width: 60%;
+  }
+  .section5 .title1 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .section5 .title2 {
+    width: 20%;
+  }
+}

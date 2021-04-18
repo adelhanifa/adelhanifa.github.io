@@ -1,0 +1,224 @@
+/*===== this is main style part =====*/
+/*===================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.rotate45 {
+  transform: rotate(-45deg);
+}
+
+.rotate90 {
+  transform: rotate(-90deg);
+}
+
+.paragraph-text {
+  font-family: 'Lato';
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.title1 {
+  font-size: 40px;
+  line-height: 85px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  font-family: 'Bellefair';
+}
+
+.title2 {
+  width: 17%;
+}
+
+.heading {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 3px;
+  font-family: 'Bellefair';
+}
+
+.sub-heading {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: 'Bellefair';
+}
+
+svg[onclick] {
+  cursor: pointer;
+}
+
+.vertical {
+  width: 1px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  height: 80px;
+  display: inline-block;
+  background-color: black;
+}
+
+.footer-text {
+  font-family: 'Bellefair';
+  font-size: 15px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*===== section 1 =====*/
+.section1 {
+  background-image: url(../images/img-001.jpg);
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section1 .logo {
+  width: 20%;
+}
+
+.section1 .title1 {
+  color: #fff;
+}
+
+.section1 .title2 {
+  margin-top: -42px;
+}
+
+/*===== section 2 =====*/
+.section2 .heading {
+  margin-top: 15px;
+  width: 50%;
+}
+
+.section2 .left-part {
+  width: 85%;
+}
+
+.section2 .left-part .left-part-text {
+  width: 70%;
+}
+
+.section2 .left-part .left-part-text .paragraph-text{
+  margin-bottom: 0;
+}
+
+.section2 .right-part {
+  width: 70%;
+}
+
+.section2 .right-part .right-part-img {
+  width: 65%;
+}
+
+/*===== section 3 =====*/
+.section3 {
+  padding: 0 12px;
+}
+
+.section3 .carousel .carousel-indicators {
+  margin-bottom: calc(100vw * 2 / 100);
+}
+
+.section3 .carousel .carousel-indicators button {
+  width: calc(100vw/ 100);
+  height: calc(100vw/ 100);
+  border: 2px solid white;
+  opacity: 1;
+  background-color: transparent;
+  margin: 0 calc(100vw/ 175)!important;
+}
+
+.section3 .carousel .carousel-indicators .active {
+  background-color: white;
+}
+
+/*===== section 4 =====*/
+.section4 .left-part{
+  width: 55%;
+}
+
+.section4 .right-part{
+  width: 45%;
+}
+
+.section4 .left-part .left-part-img1{
+  width: 59%;
+}
+
+.section4 .left-part .left-part-img2{
+  width: 48%;
+  right: 0;
+}
+
+.section4 .part2 .left-part .left-part-text{
+  width: 75%;
+}
+
+.section4 .part2 .right-part .right-part-img{
+  width: 75%;
+}
+
+/*===== section 6 =====*/
+.section5 .title2{
+  margin-top: -15px;
+}
+
+/*===== section 6 =====*/
+.section6 {
+  margin-top: -7px;
+  background-image: url(../images/img-009.jpg);
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section6 .vertical {
+  margin-top: 0;
+  height: 120px;
+  display: inline-block;
+  background-color: white;
+  padding: 0;
+}
+
+.section6 .tel-container {
+  background-color: white;
+  font-family: Bellefair;
+  font-size: 30px;
+  padding: 12px 65px;
+}
+
+.section6 .tel-container svg{
+  margin-top: -8px;
+  margin-right: 10px;
+}

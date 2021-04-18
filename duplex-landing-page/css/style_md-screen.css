@@ -1,0 +1,46 @@
+/*===== this style for screen up 768px until 991px =====*/
+/*======================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sub-heading {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Bellefair';
+  }
+  .section1 {
+    height: 700px;
+  }
+  .section1 .title1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .section1 .title2 {
+    width: 20%;
+    margin-top: -32px;
+  }
+  .section2 .heading {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 15px;
+    width: 65%;
+  }
+  .section2 .left-part .left-part-text {
+    width: 85%;
+  }
+  .section2 .right-part {
+    width: 80%;
+  }
+  .section4 {
+    padding: 0 12px;
+  }
+  .section5 .title1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .section5 .title2 {
+    width: 20%;
+  }
+  .section6 {
+    padding: 0 12px;
+  }
+}
