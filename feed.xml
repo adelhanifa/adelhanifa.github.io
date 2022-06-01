@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Free articles from Vincent Lab]]></title>
+        <description><![CDATA[Vincent Lab is a platform for people to learn programming while having the environment in mind.]]></description>
+        <link>http://github.com/dylang/node-rss</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 01 Jun 2022 13:00:53 GMT</lastBuildDate>
+        <author><![CDATA[Canei ag]]></author>
+        <item>
+            <title><![CDATA[Test RSS for Canei ag]]></title>
+            <description><![CDATA[In this page, I will test how to set up a rss feeds to Canei quick]]></description>
+            <link>http://app.quick.local:3000/</link>
+            <guid isPermaLink="true">http://app.quick.local:3000/</guid>
+            <dc:creator><![CDATA[Canei ag]]></dc:creator>
+            <pubDate>Fri, 20 May 2022 04:00:00 GMT</pubDate>
+            <id>27c69bd9-3970-47f4-ac7d-b9a4d327d65d</id>
+        </item>
+        <item>
+            <title><![CDATA[Test Nr: 2 RSS for Canei.quick +]]></title>
+            <description><![CDATA[Other test, for canei quick + to see another test feed.]]></description>
+            <link>https://app.quick.beta.canei.io/</link>
+            <guid isPermaLink="true">https://app.quick.beta.canei.io/</guid>
+            <dc:creator><![CDATA[Canei ag]]></dc:creator>
+            <pubDate>Sat, 21 May 2022 04:00:00 GMT</pubDate>
+            <id>96ba5304-3f55-4bd3-99cf-9f1f640aac76</id>
+        </item>
+        <item>
+            <title><![CDATA[Test Nr: 3 RSS for Canei.quick Liquidity]]></title>
+            <description><![CDATA[Last test to check 3 feeds with different texts and descriptions.]]></description>
+            <link>https://app.quick.prod.canei.io/</link>
+            <guid isPermaLink="true">https://app.quick.prod.canei.io/</guid>
+            <dc:creator><![CDATA[Canei ag]]></dc:creator>
+            <pubDate>Sun, 22 May 2022 04:00:00 GMT</pubDate>
+            <id>9134583d-20e4-4208-9032-eac78209ab64</id>
+        </item>
+    </channel>
+</rss>
